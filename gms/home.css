@@ -1,0 +1,137 @@
+html{
+    --dark_color: rgba(149, 231, 187, 1);
+    --light_color: rgba(174, 237, 203, 1);
+}
+
+.main_container{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 24.5vh 24.5vh 24.5vh 24.5vh;
+    grid-gap: 0px;
+    padding: 0px;
+}
+
+.top{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    background-color: var(--dark_color);
+    border: 1px solid var(--dark_color);
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: Lato;
+}
+
+.sidebar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+    background-color: var(--dark_color);
+    border: 1px solid var(--dark_color);
+    border-radius: 5px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.sidebar li{
+    list-style-type: none;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.sidebar ul{
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 31%;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.sidebar a:hover{
+    background-color: var(--light_color);
+    padding: 10px;
+}
+
+.content{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+    padding-top: 8px;
+    padding-left: 28px;
+}
+
+.content p{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.login_input div{
+    padding: 10px;
+    font-family: Lato;
+    font-weight:600;
+}
+
+.SUBMIT_IG button{
+    background-color: var(--dark_color);
+    border: 1px solid var(--dark_color);
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+}
+
+.SUBMIT_IG button:hover{
+    background-color: var(--light_color);
+}
+
+.dashboard_buttons{
+    padding-top: 30px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.det_buttons{
+    width: 70%;
+    height: 60px;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.515);
+    border: 1px solid var(--dark_color);
+    border-radius: 5px;
+}
+
+.det_buttons:hover{
+    background-color: var(--dark_color);
+}
